@@ -14,9 +14,10 @@
 3. The Coupon class represents a Coupon in the system, with properties- code, type, max discount price, min discount price,
 discount percentage.
 4. Discount calculation process based on coupon types is implemented using Strategy pattern.
-5. The CouponType is constant exporting class, represents coupon types.
-6. The ShoppingSystemManager class is the central class which manages carts, products, coupons and payments process. It's implemented using singleton pattern.
-7. The Launch class is used to perform all the operations.
+5. The CouponDiscountStrategy interface, FlatDiscountStrategy class, PercentageDiscountStrategy class and DiscountContext class is used for discount calculation Strategy pattern.
+6. The CouponType is constant exporting class, represents coupon types.
+7. The ShoppingSystemManager class is the central class which manages carts, products, coupons and payments process. It's implemented using singleton pattern.
+8. The Launch class is used to perform all the operations.
 
 ## Design Patterns Used:
 1. Singleton pattern is used for ShoppingSystemManager class.
