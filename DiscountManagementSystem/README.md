@@ -7,6 +7,7 @@
 4. Process payment on a Cart after applying Coupons.
 5. On successful order, that should reflect on product store.
 6. System should able to handel concurrent orders.
+7. Add Exception handling
 
 ## Classes, Interfaces and Enumerations:
 1. The Product class represents a product in the system. with properties- id, name, price, quantity.
