@@ -7,7 +7,7 @@ public class ShoppingSystemManager {
 	private HashMap<Integer, Product> storedProducts = new HashMap();
 	private HashMap<Integer, Cart> carts = new HashMap();
 	private HashMap<Integer, Coupon> coupons= new HashMap();
-	Object lock = new Object();
+	private Object lock = new Object();
 	
     private ShoppingSystemManager() { }
 	
