@@ -31,5 +31,9 @@ public class Slot {
 		}
         return null;
 	}
+	@Override
+	public String toString() {
+		return "Slot [startTime=" + startTime + ", endTime=" + endTime + "]";
+	}
     
 }

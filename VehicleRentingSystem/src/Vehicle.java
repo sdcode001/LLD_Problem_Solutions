@@ -29,6 +29,11 @@ public class Vehicle {
 	public void setBookingSlot(Slot bookingSlot) {
 		this.bookingSlot = bookingSlot;
 	}
+	@Override
+	public String toString() {
+		return "Vehicle [id=" + id + ", type=" + type + ", costPerHour=" + costPerHour + ", bookingSlot=" + bookingSlot
+				+ "]";
+	}
     
     
 }

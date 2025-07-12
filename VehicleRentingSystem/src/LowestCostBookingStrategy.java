@@ -15,7 +15,7 @@ public class LowestCostBookingStrategy implements BookingStrategy{
 		for(Branch branch: branchMap.values()) {
 			for(List<Vehicle> vehicleTypeList: branch.getVehicleMap().values()) {
 				for(Vehicle vehicle: vehicleTypeList) {
-					if(vehicle.getType() == vehicleType) {
+					if(vehicle.getType().equals(vehicleType)) {
 						//check if vehicle is available for the given slot or not
 						if(vehicle.getBookingSlot()==null || 
 						   (bookingStart.compareTo(vehicle.getBookingSlot().getEndTime())>0 || bookingEnd.compareTo(vehicle.getBookingSlot().getStartTime())<0)
@@ -36,7 +36,7 @@ public class LowestCostBookingStrategy implements BookingStrategy{
 			newSlot.setStartTime(startTime);
 			newSlot.setEndTime(endTime);
 			targetVehicle.setBookingSlot(newSlot);
-			System.out.println("Booked "+vehicleType+" from branch- "+targetBranch+" for per hour cost- "+targetVehicle.getCostPerHour());
+			System.out.println("Booked "+vehicleType+" from branch- "+targetBranch+" for per hour cost: "+targetVehicle.getCostPerHour());
 			return BookingStatus.BOOKED;
 		}
 		
